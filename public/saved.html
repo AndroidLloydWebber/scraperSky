@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraper Sky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white darken-2">
+          <a href="#" class="brand-logo">Scraper Sky</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="active blue lighten-1"><a href="/saved.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Articles</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="/saved.html"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Articles</a></li>
+            <li><a href="/scrape"><i class="fa fa-book" aria-hidden="true"></i> Scrape Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div id="wrapper">
+      <!-- <h1>Note Scraper</h1> -->
+      <h2>Saved Articles</h2>
+      <hr>
+      <div class="row">
+        <div id="saved"></div>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger center" href="#modal1">Modal</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <!-- Need to add the article id -->
+          <h4>Notes For Article: "ID goes here"</h4>
+          <div class="row">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                  <label for="textarea1">New Note</label>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Save Note</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <footer class="page-footer grey lighten-2">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Scraper
+        <a class="right" href="#!"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

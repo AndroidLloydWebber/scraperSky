@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mongo Scraper Sky</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white darken-2">
+          <a href="#" class="brand-logo">Mongo Scraper Sky</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li class="active blue lighten-1"><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a class="savedArticlesButton"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Articles</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="/savedArticles" class="savedArticlesButton"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Articles</a></li>
+            <li><a href="/scrape" class="scrapeButton"><i class="fa fa-book" aria-hidden="true"></i> Scrape Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div>
+      <div class="row" id="heading">
+        <div class="col s12 center-align">
+          <h1>Mongo Scraper Sky</h1>
+          <a href="/scrape" class="scrapeButton waves-effect waves-light btn blue lighten-1 z-depth-5"><i class="fa fa-book" aria-hidden="true"></i> Scrape Articles</a>
+        </div>
+      </div>
+
+      <div id="wrapper">
+        <!-- <h1>Note Scraper</h1> -->
+        <h2>Articles</h2>
+        <hr>
+        <div class="row">
+
+          <div id="articles"></div>
+
+          <!-- <div id="buttons"></div> -->
+
+        </div>
+        <!-- Modal Structure -->
+        <div id="modalSaved" class="modal">
+          <div class="modal-content">
+            <h4>Article Saved</h4>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+
+  <footer class="page-footer grey lighten-2">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Scraper Sky
+        <a class="right" href="www.github.com/AndroidLloydWebber"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+
+</body>
+
+</html>

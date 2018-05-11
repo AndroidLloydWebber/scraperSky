@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Scraper Sky</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper white darken-2">
+          <a href="#" class="brand-logo">Scraper Sky</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="active blue lighten-1"><a href="/savedArticles"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Articles</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="/saved"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Scrape Articles</a></li>
+            <li><a href="/scrape"><i class="fa fa-book" aria-hidden="true"></i> Scrape Sky Articles</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div id="wrapper">
+      <h2>Saved Articles</h2>
+      <hr>
+      <div class="row">
+        <div id="savedArticles"></div>
+        <!-- <div id="notes"></div> -->
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer grey lighten-2">
+    <div class="footer-copyright">
+      <div class="container">
+        © 2018 Copyright Scraper Sky
+        <a class="right" href="#!"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+</body>
+
+</html>
