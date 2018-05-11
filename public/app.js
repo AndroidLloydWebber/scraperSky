@@ -52,6 +52,7 @@ $(document).ready(function() {
       }
     } else {
       var noArticles = $("#savedArticles").append("<h3>Click The Button to Begin Scraping.</h3>");
+       location.reload();
     }
   });
   
@@ -62,14 +63,15 @@ $(document).ready(function() {
       url: "/saved" + thisId
     }).done(function(data) {
       $("#modalSaved").modal("open");
-      // location.reload();
     });
   });
+       
+
   
-  // When someone clicks a p tag
+  // When someone clicks a tag
   $(document).on("click", ".note", function() {
   
-    // Save the id from the p tag
+    // Save the id from tag
     var thisId = $(this).attr("id");
     console.log("id = " + thisId);
   
